@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai or code</title>
+</head>
+<body style="background-color: #212121;color: white;">
+   
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+
+<script>
+    function addlanguage(lanName) {
+        const li = document.createElement("li")
+        li.innerHTML = `${lanName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage("typescript")
+
+    function addOptilang(langName) {
+        const li =document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilang("golang")
+
+    //Edit
+
+    const secondlang = document.querySelector('li:nth-child(2)')
+    // secondlang.innerHTML = "mojo"
+    const newli = document.createElement('li')
+
+    newli.textContent = "java"
+    secondlang.replaceWith(newli)
+
+    // edit
+
+    const firstchild = document.querySelector("li:first-child")
+    // // console.log(firstchild);
+    // const li = document.createElement("li")
+    // li.textContent = "typesscript"
+    // firstchild.replaceWith(li)
+    firstchild.outerHTML = '<li>typesrpt</li>'
+
+    // remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html>

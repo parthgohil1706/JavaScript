@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai or code</title>
+</head>
+<body style="background-color: #212121;color: white;">
+    <div class="perent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+<script>
+    const perent = document.querySelector('.perent')
+    // console.log(perent);
+    // console.log(perent.children);
+    // console.log(perent.children[1].innerHTML);
+
+    // for (let i = 0; i < perent.children.length; i++) {
+    //         console.log(perent.children[i].innerHTML);        
+    // }
+
+    perent.children[1].style.color='orange'
+    // console.log(perent.firstElementChild);
+    // console.log(perent.lastElementChild);
+
+    // const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ",perent.childNodes);
+    
+    
+    
+    
+    
+</script>
+</html>
